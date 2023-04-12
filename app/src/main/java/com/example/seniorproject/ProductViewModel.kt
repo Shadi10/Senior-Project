@@ -61,16 +61,16 @@ class ProductViewModel(application: Application) : AndroidViewModel(application)
         when (sharedPreferences.getString("userEmail", "amineshadi10@gmail.com")) {
             FIRSTACCOUNT -> {
                 getMerchantSecretKey(
-                    "1iwnl1grniyoaxohp2xri8tmf95r9kprk5tgbqdtmkezfs2mcygstqm9czv8shyc"
+                    "###############################"
                 )
             }
             SECONDACCOUNT -> {
                 getMerchantSecretKey(
-                    "ga5px9c1nm7jjlltidawraj3g7oh7r0zpv5g4q3dm4kk4tq52zvlnkg9z0izqjgb"
+                    "##################################"
                 )
             }
             else -> {
-                getMerchantSecretKey("1iwnl1grniyoaxohp2xri8tmf95r9kprk5tgbqdtmkezfs2mcygstqm9czv8shyc")
+                getMerchantSecretKey("######################################")
             }
         }
     private val merchantId =
