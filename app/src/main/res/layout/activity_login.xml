@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/loginBgColor"
+    android:fitsSystemWindows="false"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    tools:context="com.example.seniorproject.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginVertical="50dp"
+                    android:fontFamily="@font/inter_extra_bold"
+                    android:text="@string/already_nhave_an_naccount"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="120dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/cartoon_business_man_image"
+                        android:src="@drawable/cartoon_businessman_vector" />
+
+                </androidx.cardview.widget.CardView>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:hint="@string/email"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:boxCornerRadiusBottomStart="20dp"
+                app:boxCornerRadiusTopEnd="20dp"
+                app:boxCornerRadiusTopStart="20dp"
+                app:boxStrokeColor="@color/tvColor"
+                app:endIconMode="clear_text"
+                app:errorTextAppearance="@font/inter_extra_bold"
+                app:hintTextColor="@color/tvColor">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_email_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_extra_bold"
+                    android:gravity="center"
+                    android:inputType="textEmailAddress"
+                    android:padding="13dp"
+                    android:textColor="@color/white"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/password"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:boxCornerRadiusBottomStart="20dp"
+                app:boxCornerRadiusTopEnd="20dp"
+                app:boxCornerRadiusTopStart="20dp"
+                app:boxStrokeColor="@color/tvColor"
+                app:endIconMode="password_toggle"
+                app:errorTextAppearance="@font/inter_extra_bold"
+                app:hintTextColor="@color/tvColor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_password_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_extra_bold"
+                    android:gravity="center"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textCursorDrawable="@null"
+
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/checkbox_remember_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_extra_bold"
+                    android:text="@string/remember_me" />
+
+                <TextView
+                    android:id="@+id/tv_forgetPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="40dp"
+                    android:fontFamily="@font/inter_extra_bold"
+                    android:gravity="center"
+                    android:text="@string/forgot_password"
+                    android:textColor="@color/tvColor"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bt_login"
+                android:layout_width="150sp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="68dp"
+                android:backgroundTint="@color/tvColor"
+                android:fontFamily="@font/inter_extra_bold"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:cornerRadius="@android:dimen/notification_large_icon_height" />
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/inter_extrabold"
+                android:text="@string/new_user_register_now"
+                android:textAlignment="center"
+                android:textColor="@color/tvColor"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:ignore="OnClick" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:weightSum="12">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="3"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:fontFamily="@font/inter_extra_bold"
+                    android:text="@string/use_other_methods"
+                    android:textAlignment="center"
+                    android:textColor="@color/tvColor"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="3"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/gmailLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/gmail_link_logo"
+                    android:src="@drawable/icons8_gmail_logo" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:contentDescription="TODO" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="11dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_side_bg" />
+
+    <ImageView
+        android:id="@+id/plus_icon"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="10dp"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/back_arrow"
+        android:src="@drawable/addsidebutton" />
+
+    <View
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="52dp"
+
+        android:background="@drawable/ic_baseline_arrow_forward_24" />
+
+</RelativeLayout>

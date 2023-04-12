@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Senior Project</string>
+    <string name="use_other_methods">Use other Methods</string>
+    <string name="new_user_register_now">New user? Register Now</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="already_nhave_an_naccount">Already \nhave an \nAccount?</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="cartoon_business_man_image">cartoon business man image</string>
+    <string name="gmail_link_logo">gmail link/logo</string>
+    <string name="plus_sign">plus sign</string>
+    <string name="use_other_methods_signup">Use other Methods</string>
+    <string name="here_s_n_your_first_n_step_with_n_us"> Here\'s\nyour first\nstep with\nus!</string>
+    <string name="name">Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="email_signup">Email</string>
+    <string name="password_signup">Password</string>
+    <string name="submit">Submit</string>
+    <string name="save_and_continue">Save and continue</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="back_arrow">back arrow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home_page">HomePageActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="home_title">Home</string>
+    <string name="chat_title">Chat</string>
+    <string name="profile_title">Profile</string>
+    <string name="my_adds_title">My Ads</string>
+    <string name="user_profile_picture">User profile picture</string>
+    <string name="user_inserted_image">User Inserted Image</string>
+    <string name="user_status">User status</string>
+    <string name="category">Category *</string>
+    <string name="price">Price *</string>
+    <string name="title">Title *</string>
+    <string name="describe_your_product">Describe your product *</string>
+    <string name="add_images">Add Images</string>
+    <string name="publish_product">Publish product</string>
+    <string name="location">Location *</string>
+    <string name="choose_location">Choose Location</string>
+    <string name="brand">Brand *</string>
+    <string name="use_current_location">Use current location</string>
+    <string name="home">Home</string>
+    <string name="my_ads">My Ads</string>
+    <string name="no_posts_available">No posts available</string>
+    <string name="update_your_product">Update your product</string>
+    <string name="reset_your_password">Reset your password</string>
+    <string name="repeat_password_reset">Repeat password</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="next_reset">Next</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="provide_your_accounts_email_for_which_u_want_to_reset_your_password">Provide your accounts email for which u want to reset your password</string>
+    <string name="forget_npassword">Forget\nPassword</string>
+    <string name="select_which_contact_detail_should_we_use_to_reset_your_password">Select which contact detail should we use to reset your password</string>
+    <string name="make_nselection">Make\nselection</string>
+    <string name="via_mail">Via mail</string>
+    <string name="via_sms">Via Sms</string>
+    <string name="unconnected_state" />
+    <string name="request_personal_sign" />
+    <string name="scan_by_binance_app">Scan By Binance App</string>
+    <string name="qr_code">QR Code</string>
+    <string name="make_purchase">Make purchase</string>
+    <string name="edit_or_delete_options">edit or delete options</string>
+    <!-- Add your client ID -->
+</resources>

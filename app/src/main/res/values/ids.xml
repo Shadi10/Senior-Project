@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="connected_status" type="id" />
+    <item name="connect_container" type="id" />
+    <item name="connectWalletButton" type="id" />
+    <item name="personalSign" type="id" />
+    <item name="remove_account" type="id" />
+    <item name="textArea" type="id" />
+</resources>

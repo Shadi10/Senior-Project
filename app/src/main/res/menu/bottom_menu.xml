@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_outline_home_24"
+        android:title="@string/home"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/placeholder"
+        android:enabled="false"
+        android:title=""
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/myAdsFragment"
+        android:icon="@drawable/ic_baseline_contact_page_24"
+        android:title="@string/my_ads"
+        app:showAsAction="always|withText" />
+
+</menu>
